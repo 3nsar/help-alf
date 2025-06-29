@@ -43,4 +43,15 @@ describe('Help Alf', function() {
 				'..........')).toEqual([7,2]);
 	});
 
+
+	it('should return the correct coordinates [10, 0] when spaceship is found', function() {
+		expect(helpAlf.add(
+				'..........\n' +
+				'..........\n' +
+				'..........\n' +
+				'..........\n' +
+				'..........\n' +
+				'..........X')).toEqual([10,0]);
+	});
+
 });
