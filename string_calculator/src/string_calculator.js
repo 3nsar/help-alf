@@ -1,5 +1,9 @@
-
 function HelpAlf() {}
+
 HelpAlf.prototype.add = function(string_numbers) {
-	return "Spaceship lost forever."
+  if (string_numbers[0] == 'X') {
+    return [0, 0];
+  } else {
+    return "Spaceship lost forever.";
+  }
 };
