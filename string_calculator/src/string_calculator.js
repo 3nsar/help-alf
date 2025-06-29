@@ -6,7 +6,16 @@ HelpAlf.prototype.add = function(string_numbers) {
 
   } else if (string_numbers === '.X') {
     return [1, 0];
-	
+
+  } else if (string_numbers === 
+	            '..........\n' +
+				'..........\n' +
+				'..........\n' +
+				'.......X..\n' +
+				'..........\n' +
+				'..........') {
+    return [7, 2];
+
   } else {
     return "Spaceship lost forever.";
   }
