@@ -33,4 +33,14 @@ describe('Help Alf', function() {
 		expect(helpAlf.add('.X')).toEqual([1,0]);
 	});
 
+	it('should return the correct coordinates [7, 2] when spaceship is found', function() {
+		expect(helpAlf.add(
+				'..........\n' +
+				'..........\n' +
+				'..........\n' +
+				'.......X..\n' +
+				'..........\n' +
+				'..........')).toEqual([7,2]);
+	});
+
 });
