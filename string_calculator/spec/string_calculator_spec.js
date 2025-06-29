@@ -10,4 +10,14 @@ describe('Help Alf', function() {
 	it('should return message if spaceship is not found', function() {
 		expect(helpAlf.add('.')).toEqual("Spaceship lost forever.");
 	});	
+	
+	it('should return message if spaceship is not found', function() {
+		expect(helpAlf.add(
+				'..........\n' +
+				'..........\n' +
+				'..........\n' +
+				'..........\n' +
+				'..........\n' +
+				'..........')).toEqual("Spaceship lost forever.");
+	});
 });
