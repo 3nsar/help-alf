@@ -6,11 +6,13 @@ describe('Help Alf', function() {
 	it('should return message if spaceship is not found', function() {
 		expect(helpAlf.add('')).toEqual("Spaceship lost forever.");
 	});
+
 	
 	it('should return message if spaceship is not found', function() {
 		expect(helpAlf.add('.')).toEqual("Spaceship lost forever.");
 	});	
-	
+
+
 	it('should return message if spaceship is not found', function() {
 		expect(helpAlf.add(
 				'..........\n' +
@@ -20,4 +22,10 @@ describe('Help Alf', function() {
 				'..........\n' +
 				'..........')).toEqual("Spaceship lost forever.");
 	});
+
+
+	it('should return the correct coordinates [0, 0] when spaceship is found', function() {
+		expect(helpAlf.add('X')).toEqual([0,0]);
+	});
+
 });
