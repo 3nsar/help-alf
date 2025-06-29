@@ -3,7 +3,11 @@ describe('Help Alf', function() {
 		helpAlf = new HelpAlf();
 	});
 
-	it('should return 0 for an empty string', function() {
+	it('should return message if spaceship is not found', function() {
 		expect(helpAlf.add('')).toEqual("Spaceship lost forever.");
 	});
+	
+	it('should return message if spaceship is not found', function() {
+		expect(helpAlf.add('.')).toEqual("Spaceship lost forever.");
+	});	
 });
