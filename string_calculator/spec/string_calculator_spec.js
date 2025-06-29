@@ -1,9 +1,9 @@
-describe('String Calculator', function() {
+describe('Help Alf', function() {
 	beforeEach(function() {
-		calculator = new StringCalculator();
+		helpAlf = new HelpAlf();
 	});
 
 	it('should return 0 for an empty string', function() {
-		expect(calculator.add('')).toEqual(0);
+		expect(helpAlf.add('')).toEqual("Spaceship lost forever.");
 	});
 });
